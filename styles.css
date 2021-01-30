@@ -257,6 +257,8 @@ input:checked[type="checkbox"]::before{
 
 .checkitem img{
     margin-right: 10px;
+    height: 8px;
+    width: 9px;
 }
 
 .start-button{

@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="description" content="Frontend Mentor Challenge | Interactive pricing component | Junior | HTML, JS, CSS">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="kitharvey">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -26,28 +29,28 @@
         <p class="pageviews" ><span id="views-number" ></span> Pageviews</p>
         <p class="amount" ><span id="amount-number" ></span> / month</p>
         <div class="slidecontainer">
-          <input type="range" min="0" max="100" value="50" step="25" class="slider" id="myRange">
+          <input type="range" min="0" max="100" value="50" step="25" class="slider" id="myRange" aria-labelledby="views-number amount-number">
         </div>
       </div>
       <div class="billings" >
-        <p class="billing" >Monthly Billing</p>
-        <input type="checkbox" class="checkbox" id="checkbox">
-        <p class="billing" >Yearly Billing <span class="discount" >25% discount</span><span class="discount-mobile" >-25%</span></p>
+        <p class="billing" id="billingMonthly" >Monthly Billing</p>
+        <input type="checkbox" class="checkbox" id="checkbox" aria-labelledby="billingYearly billingMonthly">
+        <p class="billing" id="billingYearly" >Yearly Billing <span class="discount" >25% discount</span><span class="discount-mobile" >-25%</span></p>
         
       </div>
     </div>
     <div class="bottom">
       <div class="checklist" >
         <div class="checkitem">
-          <img src="./images/icon-check.svg" >
+          <img src="./images/icon-check.svg" alt="check icon">
           <p>Unlimited websites</p>
         </div>
         <div  class="checkitem">
-          <img src="./images/icon-check.svg" >
+          <img src="./images/icon-check.svg" alt="check icon">
           <p>100% data ownership</p>
         </div>
         <div  class="checkitem">
-          <img src="./images/icon-check.svg" >
+          <img src="./images/icon-check.svg" alt="check icon">
           <p>Email reports</p>
         </div>
         
