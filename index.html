@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="title" >
+    <h2>Simple, traffic-based pricing</h2>
+    <p>Sign-up for our 30-day trial. No credit card required. </p>
+  </div>
+
+
+
+  <section>
+    <div class="top" >
+      <div class="head" >
+        <p class="pageviews" ><span id="views-number" ></span> Pageviews</p>
+        <p class="amount" ><span id="amount-number" ></span> / month</p>
+        <div class="slidecontainer">
+          <input type="range" min="0" max="100" value="50" step="25" class="slider" id="myRange">
+        </div>
+      </div>
+      <div class="billings" >
+        <p class="billing" >Monthly Billing</p>
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <p class="billing" >Yearly Billing <span class="discount" >25% discount</span><span class="discount-mobile" >-25%</span></p>
+        
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="checklist" >
+        <div class="checkitem">
+          <img src="./images/icon-check.svg" >
+          <p>Unlimited websites</p>
+        </div>
+        <div  class="checkitem">
+          <img src="./images/icon-check.svg" >
+          <p>100% data ownership</p>
+        </div>
+        <div  class="checkitem">
+          <img src="./images/icon-check.svg" >
+          <p>Email reports</p>
+        </div>
+        
+        
+      </div>
+
+      <div class="start-button" >
+        Start my trial
+      </div>
+  </div>
+
+  </section>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">kitharvey</a>.
+  </div>
+  <script src="index.js" ></script>
+</body>
+</html>
